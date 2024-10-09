@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(
-        const Duration(milliseconds: 700),
+        const Duration(seconds: 20),
         () {
             Navigator.pushReplacementNamed(context, "HomePage");
         },
@@ -28,14 +28,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color:const Color.fromARGB(244, 253, 188, 114),
+      color:Color.fromARGB(255, 0, 0, 0),
       child: Column(
         children: [
           const Spacer(),
           Center(
-            child: Image.asset('asset/152.png',
-              height:300,
-              width: 400,
+            child: Image.asset('asset/000.png',
+              height:400,
+              width: 600,
             ),
           ),
           const Spacer(),
@@ -44,9 +44,9 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Text("Points Counter",style: TextStyle(
                 inherit: false,
-                fontSize:45,
+                fontSize:35,
                 fontFamily: 'Sofadi One',
-                  color: Colors.black),
+                  color: Color.fromARGB(255, 231, 123, 31)),
                   ),
             ],
           ),
