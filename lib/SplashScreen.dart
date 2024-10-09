@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(
-        const Duration(seconds: 20),
+        const Duration(seconds: 1),
         () {
             Navigator.pushReplacementNamed(context, "HomePage");
         },
@@ -33,9 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           const Spacer(),
           Center(
-            child: Image.asset('asset/000.png',
-              height:400,
-              width: 600,
+            child: Expanded(
+              child: Image.asset('asset/000.png',
+                height:400,
+                width: 600,
+              ),
             ),
           ),
           const Spacer(),
