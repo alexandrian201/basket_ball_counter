@@ -25,9 +25,9 @@ class CustomButton extends StatelessWidget {
                 decoration: const BoxDecoration(
                 borderRadius:  BorderRadius.all(Radius.circular(15)),
                 gradient: LinearGradient(colors: [
-                  Color.fromARGB(244, 248, 135, 6),
+                  Color.fromARGB(255, 231, 123, 31),
                   Color.fromARGB(255, 202, 214, 202),
-                  Color.fromARGB(244, 248, 135, 6),
+                  Color.fromARGB(255, 231, 123, 31),
                   Color.fromARGB(244, 255, 174, 82),
                   Color.fromARGB(255, 239, 246, 239)])
                 ),
