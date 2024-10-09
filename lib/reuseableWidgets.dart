@@ -5,7 +5,7 @@ class CustomButton extends StatelessWidget {
   required this.text,
   this.ontap,
   this.width =165,
-  this.TSize =30,
+  this.TSize =25,
   });
   String text;
   double? TSize;
@@ -61,7 +61,6 @@ class CustomAppBar extends StatelessWidget {
                   Color.fromARGB(255, 255, 255, 255)])
                 ),
                 height: 60,
-                // color: Colors.blue,
                 child: const Center(
                   child: Text("Points Counter",style: TextStyle(
                     color: Colors.black,fontSize: 40),),

@@ -8,21 +8,18 @@ class HomePage extends StatelessWidget {
   HomePage({super.key});
   int teamApoints = 0;
   int teamBpoints = 0;
+  static const String routeName = 'HomePage';
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<CounterCubit/*اسم الكيوبت */, counterState/*اسم الاستات */>(
+    return BlocConsumer<CounterCubit, counterState>(
       builder: (context , state){
       return Scaffold(
-        //         appBar: AppBar(
-        //   backgroundColor: Colors.orange,
-        //   title: const Text('Points Counter'),
-        // ),
         body:  Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
-              child: const CustomAppBar(),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 30.0),
+              child: CustomAppBar(),
             ),
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
